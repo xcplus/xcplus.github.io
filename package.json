@@ -1,0 +1,29 @@
+{
+  "name": "blog",
+  "version": "1.0.0",
+  "description": "",
+  "main": "out/index.html",
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start",
+    "export": "next export",
+    "deploy": "rm -rf node_modules/.cache && rimraf out && next build && next export && touch out/.nojekyll && git add out/ && git commit -m \"Deploy to master from source\" && git subtree push --prefix out origin master -f"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xcplus/xcplus.github.io.git"
+  },
+  "dependencies": {
+    "next": "^9.5.2",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
+  },
+  "devDependencies": {
+    "rimraf": "^3.0.2"
+  },
+  "keywords": [],
+  "author": "xcplus",
+  "homepage": "https://xcplus.github.io",
+  "license": "ISC"
+}
