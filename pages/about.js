@@ -1,14 +1,14 @@
 import Link from 'next/link'
 
-const Index = () => {
+const About = () => {
   return (
     <>
     <h1>Xcplus</h1>
-    <Link href='/about'>
-      <a>about</a>
+    <Link href='/'>
+      <a>home</a>
     </Link>
     </>
   )
 }
 
-export default Index
+export default About
