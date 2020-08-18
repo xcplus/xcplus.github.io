@@ -2,6 +2,12 @@
 
 /* Write your own custom base styles here */
 
+body {
+  /* concrete/dot-grid/email-pattern */
+  background-image: url('../images/dot-grid.png');
+  background-repeat: repeat;
+}
+
 /* Start purging... */
 @tailwind components;
 /* Stop purging. */
