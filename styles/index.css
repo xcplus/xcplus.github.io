@@ -6,7 +6,9 @@ body {
   /* concrete/dot-grid/email-pattern */
   background-image: url('../images/dot-grid.png');
   background-repeat: repeat;
+  font-family: Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }
+
 
 /* Start purging... */
 @tailwind components;
@@ -16,6 +18,14 @@ body {
 /* .btn-blue {
   @apply bg-blue-500 text-white font-bold py-2 px-4 rounded;
 } */
+
+#__next {
+  width: 80%;
+}
+
+.article {
+  @apply h-auto pt-8 pb-4;
+}
 
 /* Start purging... */
 @tailwind utilities;

@@ -1,5 +1,5 @@
-import ListDetail from '../components/posts/ListDetail'
-import NoData from '../components/NoData'
+import ListDetail from '../../components/posts/ListDetail'
+import NoData from '../../components/NoData'
 
 const Index = ({ blogs }) => {
   return (
@@ -7,7 +7,7 @@ const Index = ({ blogs }) => {
       {
         blogs.map(bg => <ListDetail key={bg.id} blog={bg} />)
       }
-      { blogs.length === 0 && <NoData />}
+      {blogs.length === 0 && <NoData />}
     </div>
   )
 }
@@ -18,11 +18,11 @@ export async function getStaticProps() {
   const matter = require('gray-matter')
   const {v4: uuid} = require('uuid')
 
-  const files = fs.readdirSync(`${process.cwd()}/contents/tech`, 'utf-8')
+  const files = fs.readdirSync(`${process.cwd()}/contents/life`, 'utf-8')
 
   const blogs = files.filter((fn) => fn.endsWith('.md'))
     .map((fn) => {
-      const path = `${process.cwd()}/contents/tech/${fn}`
+      const path = `${process.cwd()}/contents/life/${fn}`
       const rawContent = fs.readFileSync(path, {
         encoding: 'utf-8'
       })

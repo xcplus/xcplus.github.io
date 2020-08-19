@@ -1,13 +1,13 @@
-import ListDetail from '../components/posts/ListDetail'
-import NoData from '../components/NoData'
+import ListDetail from '../../components/posts/ListDetail'
+import NoData from '../../components/NoData'
 
 const Index = ({ blogs }) => {
   return (
     <div className="flex flex-col justify-around pr-4">
       {
-        blogs.map(bg => <ListDetail key={bg.id} blog={bg} />)
+        blogs.length > 0 ?
+          blogs.map(bg => <ListDetail key={bg.id} blog={bg} />) : <NoData />
       }
-      { blogs.length === 0 && <NoData />}
     </div>
   )
 }
