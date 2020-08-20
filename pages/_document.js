@@ -16,13 +16,10 @@ class MyDocument extends Document {
         <Head />
         <body>
           <Navbar pname={this.props.__NEXT_DATA__.page}/>
-          <div>
-            <div className="flex flex-row mx-24">
-              <Main />
-              <SideBar />
-            </div>
+          <div className="flex flex-row mx-24">
+            <Main />
+            <SideBar />
           </div>
-          
           <NextScript />
         </body>
       </Html>
