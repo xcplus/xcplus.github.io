@@ -4,6 +4,7 @@ import Navbar from '../components/Navbar'
 import SideBar from '../components/SideBar'
 
 class MyDocument extends Document {
+
   static async getInitialProps(ctx) {
     const initialProps = await Document.getInitialProps(ctx)
     return { ...initialProps }
@@ -14,7 +15,7 @@ class MyDocument extends Document {
       <Html>
         <Head />
         <body>
-          <Navbar />
+          <Navbar pname={this.props.__NEXT_DATA__.page}/>
           <div>
             <div className="flex flex-row mx-24">
               <Main />
