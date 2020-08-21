@@ -3,7 +3,7 @@ import NoData from '../components/NoData'
 
 const Index = ({ blogs }) => {
   return (
-    <div className="flex flex-col justify-around pr-4">
+    <div className="flex flex-col mt-8 mx-1 flex-1 md:mr-4 md:w-4/5">
       {
         blogs.map(bg => <ListDetail key={bg.id} blog={bg} />)
       }

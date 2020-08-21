@@ -2,7 +2,7 @@ import PostDetail from '../../components/posts/PostDetail'
 
 const Detail = ({ blog }) => {
   return (
-    <div className="flex flex-col justify-around pr-4">
+    <div className="flex flex-col flex-1 mt-8 mx-1 w-1">
       <PostDetail blog={blog}/>
     </div>
   )
