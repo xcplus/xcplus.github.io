@@ -21,7 +21,7 @@ const Bios = () => {
   }, []);
 
   return (
-    <div style={{minHeight: 40}}>
+    <>
       <ul id="writing_intro" className='hidden font-thin'>
         <li>
           运动爱好 <span className="ml-1">🎱、 🏸️、 🏓</span> 。
@@ -46,7 +46,7 @@ const Bios = () => {
         <li>......</li>
       </ul>
       <span ref={el} className='text-2xl' />
-    </div>
+    </>
   )
 }
 

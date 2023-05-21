@@ -16,7 +16,9 @@ const Home = ({ allArticlesData, allProjects }: {allArticlesData: ArticleType[],
           <div className="flex-1 flex flex-col h-full">
             <p className='text-6xl font-extrabold mb-4'>欢迎到来 👏  </p>
             <p className="text-2xl text-slate-400 py-4">我是Xcplus —— Web开发者, 喜欢安静.</p>
-            <Bios />
+            <div style={{minHeight: 50}}>
+              <Bios />
+            </div>
             <div className="grow flex flex-col justify-between gap-2 items-center py-4 sm:flex-col md:flex-row">
               <Link href='/about' className="border py-2 px-4 rounded-full bg-black text-white text-center text-base  font-medium no-underline dark:bg-white dark:text-black w-4/5 md:w-2/3 lg:w-1/3">
                 了解更多
