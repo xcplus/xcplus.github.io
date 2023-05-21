@@ -27,18 +27,18 @@ const Details = ({ articleData }: {articleData: ArticleType}) => {
       </div>
       <div className='mt-4 tracking-wide leading-8 overflow-y-scroll mx-0 px-2 max-w-full' >
         <ReactMarkdown
-          children={articleData.markdownContent} 
           components={{
             code({node, inline, className, children, ...props}) {
               const match = /language-(\w+)/.exec(className || '')
               return !inline && match ? (
                 <SyntaxHighlighter
                   {...props}
-                  children={String(children).replace(/\n$/, '')}
                   style={tomorrow}
                   language={match[1]}
                   PreTag="div"
-                />
+                >
+                  {String(children).replace(/\n$/, '')}
+                </SyntaxHighlighter>
               ) : (
                 <code {...props} className={className}>
                   {children}
@@ -46,7 +46,9 @@ const Details = ({ articleData }: {articleData: ArticleType}) => {
               )
             }
           }}
-          remarkPlugins={[remarkGfm, emoji]} />
+          remarkPlugins={[remarkGfm, emoji]}>
+            {articleData.markdownContent}
+          </ReactMarkdown>
       </div>
     </div>
   )
