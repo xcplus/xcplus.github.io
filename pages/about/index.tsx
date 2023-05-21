@@ -23,16 +23,16 @@ const About = () => {
             <div className='text-center mt-2 text-lg text-slate-500'>
               通过博客鼓励自己不断学习；当下努力，未来可期
             </div>
-            <div className='mt-4 flex flex-col justify-center items-center gap-2 md:gap-4 md:flex-row'>
-              <Link href='https://github.com/xcplus' target='_blank' className='flex justify-center text-white items-center bg-black dark:bg-gray-800 px-4 py-1 gap-2 rounded-md hover:shadow-lg hover:shadow-gray-800/20 dark:hover:shadow-slate-600/20 w-1/2 sm:w-1/3 md:w-1/5'>
+            <div className='mt-4 flex flex-col justify-center items-center gap-2 md:gap-4 sm:flex-row md:flex-row'>
+              <Link href='https://github.com/xcplus' target='_blank' className='flex justify-center text-white items-center bg-black dark:bg-gray-800 px-4 py-1 gap-2 rounded-md hover:shadow-lg hover:shadow-gray-800/20 dark:hover:shadow-slate-600/20 w-4/5 md:w-1/5'>
                 <AiFillGithub className='text-white text-2xl'/>
                 <span className=' text-xl'>Github</span>
               </Link>
-              <Link href='https://twitter.com/golovesx' target='_blank' className='flex justify-center text-white items-center bg-sky-500 px-4 py-1 gap-2 rounded-md hover:shadow-lg hover:shadow-sky-500/20 w-1/2 sm:w-1/3 md:w-1/5'>
+              <Link href='https://twitter.com/golovesx' target='_blank' className='flex justify-center text-white items-center bg-sky-500 px-4 py-1 gap-2 rounded-md hover:shadow-lg hover:shadow-sky-500/20 w-4/5 md:w-1/5'>
                 <AiOutlineTwitter className='text-white text-2xl' />
                 <span className=' text-xl'>Twitter</span>
               </Link>
-              <Link href='mailto:golovesx@gmail.com' className='flex justify-center text-white items-center bg-violet-500 px-4 py-1 gap-2 rounded-md hover:shadow-lg hover:shadow-violet-500/20 w-1/2 sm:w-1/3 md:w-1/5'>
+              <Link href='mailto:golovesx@gmail.com' className='flex justify-center text-white items-center bg-violet-500 px-4 py-1 gap-2 rounded-md hover:shadow-lg hover:shadow-violet-500/20 w-4/5 md:w-1/5'>
                 <AiOutlineMail className='text-white text-2xl' />
                 <span className=' text-xl'>邮箱</span>
               </Link>
