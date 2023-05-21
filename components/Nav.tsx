@@ -22,8 +22,8 @@ const Nav = () => {
   const pathname = router.pathname;
 
   return (
-    <div className="fixed flex top-4">
-      <nav className="px-2 py-4 rounded-full items-center font-semibold bg-transparent shadow-lg dark:shadow-lg dark:shadow-slate-800">
+    <div className="fixed flex top-4 bg-white rounded-full dark:bg-slate-800">
+      <nav className="px-2 py-4 rounded-full items-center font-semibold bg-transparent shadow-lg dark:shadow-md dark:shadow-slate-800">
         {
           navItems.map(navItem => 
             <Link href={navItem.path} key={navItem.name} className={

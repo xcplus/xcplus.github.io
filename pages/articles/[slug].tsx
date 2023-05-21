@@ -10,7 +10,7 @@ import {tomorrow} from 'react-syntax-highlighter/dist/cjs/styles/prism';
 
 const Details = ({ articleData }: {articleData: ArticleType}) => {
   return (
-    <div>
+    <div className='px-1'>
       <Head>
         <title>{articleData.title}</title>
       </Head>
