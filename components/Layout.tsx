@@ -4,13 +4,15 @@ import Footer from './Footer'
 
 const Layout = ({ children }: {children: ReactNode}) => {
   return (
+    <>
+      <Nav />
       <div className='app antialiased pt-28'>
-        <Nav />
         <div className='mx-6 sm:mx-16 flex-1 max-w-full'>
           {children}
         </div>
         <Footer />
       </div>
+    </>
   )
 }
 

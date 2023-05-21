@@ -22,6 +22,7 @@ const Nav = () => {
   const pathname = router.pathname;
 
   return (
+    <div className='flex justify-center'>
     <div className="fixed top-4 bg-white rounded-full dark:bg-slate-800">
       <nav className="px-2 py-2 flex rounded-full items-center font-semibold bg-transparent shadow-lg dark:shadow-md dark:shadow-slate-800">
         {
@@ -43,6 +44,7 @@ const Nav = () => {
           )
         }
       </nav>
+    </div>
     </div>
   )
 }
