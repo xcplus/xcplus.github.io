@@ -25,7 +25,7 @@ const Details = ({ articleData }: {articleData: ArticleType}) => {
           </div>
         </div>
       </div>
-      <div className='mt-4 tracking-wide leading-8 overflow-y-scroll mx-0 px-2 max-w-full prose lg:prose-xl' >
+      <div className='mt-4 tracking-wide leading-8 overflow-y-scroll mx-0 px-2 max-w-full prose lg:prose-xl dark:prose-invert' >
         <ReactMarkdown
           components={{
             code({node, inline, className, children, ...props}) {
