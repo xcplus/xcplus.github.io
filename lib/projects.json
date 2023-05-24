@@ -1,9 +1,0 @@
-[
-  {
-    "title": "个人博客(本站)",
-    "summary": "基于 TS、Nextjs、Tailwindcss、framer-motion 构建的个人站点。",
-    "pic": "/project1.png",
-    "date": "2023-05-21",
-    "proUrl": "https://xcplus.github.io/"
-  }
-]
