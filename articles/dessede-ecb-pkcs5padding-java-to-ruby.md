@@ -1,5 +1,5 @@
 ---
-title: Ruby 实现 Java 中的"DESede/ECB/PKCS5Padding"的加密  
+title: Ruby实现Java中的DESede/ECB/PKCS5Padding的加密  
 slug: dessede-ecb-pkcs5padding-java-to-ruby
 intro: 开发过程中，第三方SDK经常都是针对java、php、python、node.js的封装或者给出相应的事例，而针对 Ruby 的很少，工作中遇到了ECB加密解密的需求，下面给出Ruby 如何实现 Java 中的 ECB 加密解密的相关例子
 tags: ruby, java, ecb加密

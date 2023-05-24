@@ -2,7 +2,7 @@
 title: 通过 acme.sh 配置 https
 slug: through-acme-configure-https
 intro: 为了网站安全，我们经常会给我们的域名配置并启用https，使我们的网站更加安全，如今有很多可以自动生成证书的工具，比如：acme.sh、Certbot等，由于经常性的使用，所以写一下使用acme.sh的方法和配置
-tags: ruby, acme.sh, https证书, nginx
+tags: ruby, acme.sh, nginx
 date: "2020-08-19"
 ---
 

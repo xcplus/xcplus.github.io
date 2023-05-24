@@ -15,3 +15,60 @@
 .nav_link:not(:first-child) {
   margin-left: 2px;
 }
+
+@property --r {
+  syntax: '<angle>';
+  inherits: false;
+  initial-value: 0deg;
+}
+
+@property --shimmer-angle {
+  syntax: '<angle>';
+  inherits: false;
+  initial-value: 0deg;
+}
+
+.circle-animation {
+  position: relative;
+  background: conic-gradient(from var(--r),  
+  #e92a67 0deg,
+  #a853ba 112.5deg,
+  #2a8af6 228.75deg,
+  rgba(42, 138, 246, 0) 360deg);
+  animation: rotating 4s linear infinite;
+}
+
+.circle-animation::after {
+  content: "";
+  display: block;
+  position: absolute;
+  inset: 3px;
+  border-radius: 20px;
+  z-index: 1;
+  transition: opacity .3s ease;
+}
+
+.circle-animation::after {
+  background: #fff;
+}
+.dark .circle-animation::after {
+  background: rgb(30 41 59 / 1);
+}
+
+@keyframes rotating {
+  0% {
+    --r: 0deg;
+  }
+  100% {
+    --r: 360deg;
+  }
+}
+
+@keyframes shimmer {
+  0% {
+    --shimmer-angle: 0deg;
+  }
+  100% {
+    --shimmer-angle: 360deg;
+  }
+}

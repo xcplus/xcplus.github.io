@@ -6,13 +6,13 @@ tags: macOS, homebrew
 date: "2022-02-15"
 ---
 
-# 安装 Homebrew
+#### 安装 Homebrew
 针对 macOS, 只需要在 terminal 中运行如下命令:
 ```bash
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 ```
 
-# LibreSSL SSL_connect: SSL_ERROR_SYSCALL
+#### LibreSSL SSL_connect: SSL_ERROR_SYSCALL
 在执行该安装脚本是遇到错误：
 ```bash
 fatal: unable to access 'https://github.com/Homebrew/homebrew-core/': LibreSSL SSL_connect: SSL_ERROR_SYSCALL in connection to github.com:443

@@ -21,8 +21,8 @@ const SimpleIntro = () => {
   }, []);
 
   return (
-    <div className="flex-1 items-center flex text-xl font-medium border p-8 rounded-3xl shadow-lg leading-loose" style={{minHeight: 240}}>
-      <span ref={el} />
+    <div className="flex-1 items-center flex text-xl font-medium p-8 rounded-3xl shadow-lg leading-loose circle-animation" style={{minHeight: 240}}>
+      <span className=' z-10' ref={el} />
     </div>
   )
 }
