@@ -1,0 +1,33 @@
+.pulse {
+  width: 4rem;
+  height: 4rem;
+  transition: all .5s ease;
+  background: #35D1E6;
+  position: relative;
+}
+
+.pulse, .pulse::before, .pulse::after {
+  content: "";
+  display: grid;
+  grid-area: 1/1;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  box-shadow: 0 0 0 0 #35D1E633;
+  animation: pulsing 3s linear infinite var(--s, 0);
+}
+.pulse::before {
+  --s: 1s;
+}
+.pulse::after {
+  --s: 2s;
+}
+.pulse:hover {
+  background: #35D1E677;
+  color: #fff;
+}
+
+@keyframes pulsing {
+  to {
+    box-shadow: 0 0 0 2rem #0000 ;
+  }
+}

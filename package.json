@@ -30,6 +30,7 @@
     "remark-gfm": "^3.0.1",
     "rimraf": "^5.0.1",
     "tailwindcss": "3.3.2",
+    "tailwindcss-grid-area": "^1.0.10",
     "typed.js": "^2.0.16",
     "typescript": "5.0.4"
   },

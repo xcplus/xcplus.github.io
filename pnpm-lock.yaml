@@ -61,6 +61,9 @@ dependencies:
   tailwindcss:
     specifier: 3.3.2
     version: 3.3.2
+  tailwindcss-grid-area:
+    specifier: ^1.0.10
+    version: 1.0.10(tailwindcss@3.3.2)
   typed.js:
     specifier: ^2.0.16
     version: 2.0.16
@@ -3465,6 +3468,14 @@ packages:
     dependencies:
       '@pkgr/utils': 2.4.0
       tslib: 2.5.2
+    dev: false
+
+  /tailwindcss-grid-area@1.0.10(tailwindcss@3.3.2):
+    resolution: {integrity: sha512-iTS6MzEVuK6wZ7bAsNy5YifOdyjldq6eADVLDOi9sTel/nHSqmgH0ss3g2UT4fbVNZK3SEhZKqhB+14Kc5X8tQ==}
+    peerDependencies:
+      tailwindcss: ^3.2
+    dependencies:
+      tailwindcss: 3.3.2
     dev: false
 
   /tailwindcss@3.3.2:
