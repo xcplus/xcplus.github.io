@@ -6,8 +6,8 @@ tags: css
 date: "2023-05-25"
 ---
 
-> 学习发光波纹如何实现。
-> 本代码是根据B站教程写出来的 [视频地址](https://www.bilibili.com/video/BV1cT4y1r78x/?vd_source=26a4aad2cbda10f889b9011c4ba6bbcc)
+> 学习发光波纹如何实现
+> 本代码根据B站教程写出来的 [视频地址](https://www.bilibili.com/video/BV1cT4y1r78x/?vd_source=26a4aad2cbda10f889b9011c4ba6bbcc)
 
 ### 上面就是 光波纹 展示
 

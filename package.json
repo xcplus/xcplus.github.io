@@ -7,7 +7,9 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "deploy": "rm -rf node_modules/.cache && rimraf out && next build && next export && touch out/.nojekyll && git add out/ && git commit -m \"Deploy to main from source\" && git subtree push --prefix out origin source"
+    "deploy": "rm -rf node_modules/.cache && rimraf out && next build && next export && touch out/.nojekyll && git add out/ && git commit -m \"Deploy to main from source\" && git subtree push --prefix out origin source",
+    "deploy-demo": "rm -rf node_modules/.cache && rimraf out && next build && next export && touch out/.nojekyll && git add out/ && git commit -m \"Deploy to main from source\" git push origin :source && git subtree push --prefix out origin source",
+    "deploy-init": "git push origin && git subtree push --prefix out origin source"
   },
   "dependencies": {
     "@types/node": "20.2.1",
