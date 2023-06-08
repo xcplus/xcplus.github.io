@@ -1,0 +1,1 @@
+{"pageProps":{"allProjects":[{"title":"个人博客(本站)","summary":"基于 TS、Nextjs、Tailwindcss、framer-motion 构建的个人站点。","pic":"/project1.png","date":"2023-05-21","proUrl":"https://github.com/xcplus/xcplus.github.io"},{"title":"某洗车平台后端","summary":"Ruby on Rails后端为web、以及小程序和第三方提供接口","pic":"/project2.png","date":"2023-03-21","proUrl":"https://github.com/xcplus/car_wash"}]},"__N_SSG":true}
