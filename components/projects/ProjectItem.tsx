@@ -9,8 +9,8 @@ const ProjectItem = ({ project } : { project: ProjectType }) => {
     <FadeIn>
       <Link href={project.proUrl}>
         <div className="hover:bg-gray-50 w-full hover:text-black  hover:rounded-2xl px-2 py-2">
-          <div>
-            <Image 
+          <div style={{height: "260px"}}>
+            <Image
               src={project.pic}
               alt="ppc"
               width={320}

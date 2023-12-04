@@ -10,7 +10,14 @@
     "title": "某洗车平台后端",
     "summary": "Ruby on Rails后端为web、以及小程序和第三方提供接口",
     "pic": "/project2.png",
-    "date": "2023-03-21",
+    "date": "2023-06-21",
     "proUrl": "https://github.com/xcplus/car_wash"
+  },
+  {
+    "title": "某系统管理小程序APP",
+    "summary": "Taro编写小程序, 使用的nutui样式库，后端是Ruby on Rails",
+    "pic": "/project3.png",
+    "date": "2023-12-04",
+    "proUrl": "https://github.com/xcplus/"
   }
 ]
